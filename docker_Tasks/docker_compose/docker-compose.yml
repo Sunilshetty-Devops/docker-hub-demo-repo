@@ -1,0 +1,17 @@
+---
+version: "2.2"
+services:
+  tomcat1:
+    image: tomcat:9.0
+    ports:
+      - 8082:8080
+    volumes: 
+      - /var/snap/docker/common/var-lib-docker/volumes/test1_volume/_data:/home
+  tomcat2:
+    image: tomcat:9.0
+    ports:
+      - 8083:8080
+    volumes:
+      - /var/snap/docker/common/var-lib-docker/volumes/test1_volume/_data:/home
+
+

@@ -1,0 +1,16 @@
+version:2.2
+service:
+tomcat1:
+image: tomcat:9.0
+ports:
+-8082:8080
+volumes:
+ -test1_volume:/home
+
+tomcat2:
+image: tomcat:9.0
+ports:
+-8083:8080
+volumes: 
+-test2_volume:/home
+

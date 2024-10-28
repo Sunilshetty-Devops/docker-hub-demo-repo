@@ -1,0 +1,25 @@
+version: "1.2"
+services:
+  tomcat1:
+    image: tomcat:9.0.95
+    ports:
+      - 8082:8080
+    volumes:
+      - /home/sunilkumar/docker-compose/mounts/:/home/
+
+version: "1.0"
+services:
+  sql_server:
+    image: sqlserver:2.0
+	ports:
+	  -8083:8080
+	     volumes:
+                     #     - /home/sunilkumar/docker-compose/mounts/:/home/
+
+version: 3.0
+services:
+  ubuntu:
+     image: ubuntu:20.04
+	  volumes:
+                  #     - /home/sunilkumar/docker-compose/mounts/:/home/
+
